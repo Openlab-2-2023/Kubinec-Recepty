@@ -1,0 +1,29 @@
+.search-bar{
+    width: 700px;
+    border-radius: 10px;
+    height: 30px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  .search-button{
+    height: 35px;
+    width: 40px;
+    border-radius:0px ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+    border-width: 1px;
+    background-color: white;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-icon{
+    width: 15px;
+    height: 15px;
+    
+  }
