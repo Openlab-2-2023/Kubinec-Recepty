@@ -13,14 +13,31 @@
   <body class="body">
     <div class="header">
         <div class="left-section">
-            <p>𝓡𝓮𝓬𝓮𝓹𝓽𝔂.𝓢𝓴</p>
+            <button class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂.𝓢𝓴</button>
+            <script>
+              function refreshPage() {
+                  window.location.reload();
+              }
+          </script>
           </div>
       <div class="search-container">
         <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button">
+        <button class="search-button" onclick="performSearch()">
           <img class="search-icon" src="/images/search-icon.png" />
         </button>
+        <script>
+          function performSearch() {
+              const searchTerm = document.getElementById('searchInput').value;
+              console.log("Searching for:", searchTerm);
+             
+          }
+      </script>
+        
       </div>
+      <button class="Recepty-button">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</button>
+      <button class="Kontakty-button">𝓚𝓸𝓷𝓽𝓪𝓴𝓽𝔂</button>
+    
+    
     </div>
   </body>
 </html>

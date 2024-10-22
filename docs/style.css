@@ -1,19 +1,21 @@
 .search-bar{
-    width: 700px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 0px;
     height: 30px;
+    border-bottom-left-radius:10px ;
+    border-top-left-radius:10px ;
 }
 .search-container{
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: center;
-    background-color: rgb(167, 97, 6);
+    background-color: rgb(224, 50, 186);
     padding-bottom: 10px;
     padding-top: 10px;
   }
   .search-button{
-    height: 35px;
+    height: 34px;
     width: 40px;
     border-radius:0px ;
     border-top-right-radius: 20px;
@@ -33,16 +35,56 @@
   .left-section{
     background-color:white;  
     font-family:Roboto,Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding-left: 80px;
+    
+   
     display: flex;
-    background-color: rgb(119, 71, 9) ;
+    background-color: rgb(173, 3, 165) ;
     justify-content: center;
     padding-top:20px ;
     align-items: center;
-    font-size: 40px;
+    font-size: 50px;
 
   }
   .body{
-    background-color: rgb(206, 147, 37);
+    background-color: rgb(234, 160, 233);
+    margin: 0px;
+  }
+  .Recepty-button{
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    background-color: transparent;  
+    font-size: 30px;
+    padding-left: 80px;
+    padding-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    
+  }
+  .refresh-button{
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    justify-content: center;
+    padding-top:20px ;
+    align-items: center;
+    font-size: 50px;
+    background-color: transparent;
+    border-width: 0;
+    padding-bottom: 20px;
+  }
+  .Kontakty-button{
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    background-color: transparent;  
+    font-size: 30px;
+    padding-left: 150px;
+    padding-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    
   }
