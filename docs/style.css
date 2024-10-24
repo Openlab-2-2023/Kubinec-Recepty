@@ -10,7 +10,7 @@
     align-items: center;
     flex: 1;
     justify-content: center;
-    background-color: rgb(224, 50, 186);
+    background-color:rgb(97, 87, 97);
     padding-bottom: 10px;
     padding-top: 10px;
   }
@@ -33,12 +33,12 @@
     
   }
   .left-section{
-    background-color:white;  
+      
     font-family:Roboto,Arial, Helvetica, sans-serif;
     
    
     display: flex;
-    background-color: rgb(173, 3, 165) ;
+    background-color: rgb(97, 87, 97) ;
     justify-content: center;
     padding-top:20px ;
     align-items: center;
@@ -46,7 +46,7 @@
 
   }
   .body{
-    background-color: rgb(234, 160, 233);
+    background-color: rgb(242, 236, 242);
     margin: 0px;
   }
   .Recepty-button{
@@ -83,6 +83,20 @@
     background-color: transparent;  
     font-size: 30px;
     padding-left: 150px;
+    padding-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    
+  }
+  .Vlastny-button{
+    width: 460px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    background-color: transparent;  
+    font-size: 30px;
+    padding-left: 200px;
     padding-top: 40px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
