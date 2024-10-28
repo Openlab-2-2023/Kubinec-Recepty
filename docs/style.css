@@ -32,16 +32,16 @@
     height: 15px;
     
   }
-  .left-section{
+  .Nazov{
       
     font-family:Roboto,Arial, Helvetica, sans-serif;
     
    
     display: flex;
     background-color: rgb(97, 87, 97) ;
-    justify-content: center;
+    
     padding-top:20px ;
-    align-items: center;
+   padding-left: 80px;
     font-size: 50px;
 
   }
@@ -101,4 +101,47 @@
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     
+  }
+  .register{
+      padding-left:50px ;
+    font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+      border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-radius: 0px;
+    border-width: 1px;
+  }
+  .log-in{
+   border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-radius: 0px;
+    border-width: 1px;
+    padding-left: 50px;
+    font-size: 20px;
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+
+  }
+  .registerform{
+    border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-radius: 0px;
+    border-width: 1px;
+  }
+  .loginform{
+    border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    border-radius: 0px;
+    border-width: 1px;
   }
