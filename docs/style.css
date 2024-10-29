@@ -57,22 +57,24 @@
     border-width: 0;
     background-color: transparent;  
     font-size: 30px;
-    padding-left: 80px;
-    padding-top: 40px;
+    margin-left: 80px;
+    margin-top: 40px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    
+    text-decoration: none;
   }
   .refresh-button{
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     justify-content: center;
-    padding-top:20px ;
+    margin-top:40px ;
     align-items: center;
     font-size: 50px;
     background-color: transparent;
     border-width: 0;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
   }
   .Kontakty-button{
     width: 100px;
@@ -82,11 +84,11 @@
     border-width: 0;
     background-color: transparent;  
     font-size: 30px;
-    padding-left: 150px;
-    padding-top: 40px;
+    margin-left: 150px;
+    margin-top: 40px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    
+    text-decoration: none;
   }
   .Vlastny-button{
     width: 460px;
@@ -96,14 +98,14 @@
     border-width: 0;
     background-color: transparent;  
     font-size: 30px;
-    padding-left: 200px;
-    padding-top: 40px;
+    margin-left: 200px;
+    margin-top: 40px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    
+    text-decoration: none;
   }
   .register{
-      padding-left:50px ;
+      margin-left:50px ;
     font-size: 20px;
       align-items: center;
       justify-content: center;
@@ -114,6 +116,7 @@
     border-bottom-right-radius:15px ;
     border-radius: 0px;
     border-width: 1px;
+    
   }
   .log-in{
    border-top-right-radius:15px ;
@@ -122,11 +125,12 @@
     border-bottom-right-radius:15px ;
     border-radius: 0px;
     border-width: 1px;
-    padding-left: 50px;
+    margin-left: 50px;
     font-size: 20px;
       align-items: center;
       justify-content: center;
       display: inline-block;
+      
 
   }
   .registerform{
@@ -136,6 +140,7 @@
     border-bottom-right-radius:15px ;
     border-radius: 0px;
     border-width: 1px;
+    
   }
   .loginform{
     border-top-right-radius:15px ;
@@ -144,4 +149,21 @@
     border-bottom-right-radius:15px ;
     border-radius: 0px;
     border-width: 1px;
+    
   }
+a{
+text-decoration: none;
+color: black;
+}
+a:hover{
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.refresh-button:hover{
+  color: black  ;
+}
+.refresh-button:visited{
+  color: black;
+}

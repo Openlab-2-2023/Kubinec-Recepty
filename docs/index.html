@@ -13,8 +13,13 @@
   <body class="body">
     <div class="header">
         <div class="Nazov">
-            <button class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂.𝓢𝓴</button>
-           <div class="register">
+            <button class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</button>
+            <script>
+              function refreshPage() {
+                  window.location.reload();
+              }
+          </script>
+            <div class="register">
             <p >𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</p>
     <form id="registerform">
         <input type="text" name="name" placeholder="Name" required>
@@ -58,11 +63,7 @@
         alert(message);
     };
 </script>
-            <script>
-              function refreshPage() {
-                  window.location.reload();
-              }
-          </script>
+            
 
           </div>
       <div class="search-container">
@@ -79,9 +80,9 @@
       </script>
         
       </div>
-      <a href="jedla.html"><button class="Recepty-button" >𝓡𝓮𝓬𝓮𝓹𝓽𝔂</button></a>
-     <a href=""> <button class="Kontakty-button">𝓚𝓸𝓷𝓽𝓪𝓴𝓽𝔂</button></a>
-    <a href=""><button class="Vlastny-button">𝓥𝓵𝓪𝓼𝓽𝓷ý 𝓻𝓮𝓬𝓮𝓹𝓽</button></a>
+      <a href="jedla.html" class="Recepty-button">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
+     <a href="kontakty.html" class="Kontakty-button">𝓚𝓸𝓷𝓽𝓪𝓴𝓽𝔂</a>
+    <a href="vlastny.html" class="Vlastny-button">𝓥𝓵𝓪𝓼𝓽𝓷𝔂 𝓻𝓮𝓬𝓮𝓹𝓽</a>
     
     </div>
     <div class="telo">
