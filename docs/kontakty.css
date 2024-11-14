@@ -1,17 +1,19 @@
+/* Základné štýly */
 * {
   box-sizing: border-box;
- 
 }
+
 body {
-  background-color: rgb(242, 236, 242); 
+  background-color: rgb(242, 236, 242);
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 
 .Nazov {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -29,10 +31,9 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
 .refresh-button {
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
   font-size: 30px;
   background-color: transparent;
   border: 0;
@@ -42,12 +43,51 @@ body {
   transition: color 0.3s, transform 0.2s;
 }
 
-
-.refresh-button:hover {
-  color: black; 
+.refresh-button:hover,
+.refresh-button:visited {
+  color: black;
 }
 
+/* Štýl pre sekciu kontaktov */
+.contact-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-.refresh-button:visited {
-  color: black; 
+.contact-section h1 {
+  color: rgb(70, 63, 70);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #666666;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.contact-info h2 {
+  color: rgb(97, 87, 97);
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  color: #333333;
+}
+
+.contact-info a {
+  color: rgb(97, 87, 97);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: black;
 }
