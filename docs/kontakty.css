@@ -86,6 +86,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  display: inline-block;
 }
 
 .contact-info a:hover {

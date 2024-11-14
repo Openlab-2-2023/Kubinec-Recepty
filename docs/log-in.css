@@ -1,0 +1,123 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(242, 236, 242); 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Header Styling */
+  .Nazov {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+
+  }
+  
+  /* Refresh Button Styling */
+  .refresh-button {
+    font-size: 80px;
+    color: rgb(19, 18, 19);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .refresh-button:hover {
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  /* Login Form Styling */
+  .loginform {
+    background-color: rgb(97, 87, 97);
+    border-radius: 20px;
+    border: 2px solid rgb(97, 87, 97);
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    margin-top: 30px;
+  }
+  
+  /* Input Fields Styling */
+  .loginform input[type="text"],
+  .loginform input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(97, 87, 97);
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  /* Focus effect for Input Fields */
+  .loginform input[type="text"]:focus,
+  .loginform input[type="password"]:focus {
+    border-color: rgb(97, 87, 97);
+    outline: none;
+  }
+  
+  /* Submit Button Styling */
+  .loginform .log-in {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: rgb(97, 87, 97);
+    border: 2px solid rgb(97, 87, 97);
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for Login button */
+  .loginform .log-in:hover {
+    color: white;
+    background-color: rgb(97, 87, 97);
+    transform: scale(1.05);
+  }
+  
+  /* Links Styling */
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    color: rgb(97, 87, 97);
+  }
+  
+  a:visited {
+    color: black;
+  }
+  

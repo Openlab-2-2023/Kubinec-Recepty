@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registračný formulár</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body class="body">
+    <div class="header">
+        <div class="Nazov">
+            <a href="index.html"class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
+            <script>
+              function refreshPage() {
+                  window.location.reload();
+              }
+          </script>
+    <script>
+      document.getElementById("registerForm").onsubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+        const response = await fetch("/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const message = await response.text();
+        alert(message);
+      };
+    </script>
+    <div class="register">
+      <p>𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</p>
+      <form id="registerform">
+        <input type="text" name="name" placeholder="Name" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
