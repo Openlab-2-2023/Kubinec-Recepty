@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
-.body {
-  background-color: rgb(242, 236, 242);
+body {
+  background-color: rgb(228, 216, 228);
   margin: 0;
   padding: 20px;
   display: flex;
@@ -29,21 +29,7 @@
   margin-bottom: 20px;
 }
 
-.Recepty-button {
-  width: 100px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border-width: 0;
-  background-color: transparent;  
-  font-size: 30px;
-  padding-left: 80px;
-  padding-top: 40px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  text-decoration: none;
-  color: rgb(97, 87, 97);
-}
+
 
 
 .refresh-button {
@@ -67,8 +53,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
+  height: 300px;
 }
 
 

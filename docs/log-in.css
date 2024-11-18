@@ -1,4 +1,4 @@
-/* Universal Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: rgb(242, 236, 242); 
+    background-color: rgb(228, 216, 228); 
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -17,7 +17,7 @@
     text-align: center;
   }
   
-  /* Header Styling */
+  
   .Nazov {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     display: flex;
@@ -40,7 +40,7 @@
 
   }
   
-  /* Refresh Button Styling */
+  
   .refresh-button {
     font-size: 80px;
     color: rgb(19, 18, 19);
@@ -56,7 +56,7 @@
     transform: scale(1.1);
   }
   
-  /* Login Form Styling */
+  
   .loginform {
     background-color: rgb(97, 87, 97);
     border-radius: 20px;
@@ -65,9 +65,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     width: 320px;
     margin-top: 30px;
+    background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
   }
   
-  /* Input Fields Styling */
+  
   .loginform input[type="text"],
   .loginform input[type="password"] {
     width: 100%;
@@ -79,19 +80,19 @@
     transition: border-color 0.3s;
   }
   
-  /* Focus effect for Input Fields */
+ 
   .loginform input[type="text"]:focus,
   .loginform input[type="password"]:focus {
     border-color: rgb(97, 87, 97);
     outline: none;
   }
   
-  /* Submit Button Styling */
+  
   .loginform .log-in {
     font-size: 18px;
     padding: 10px 20px;
     margin-top: 10px;
-    color: rgb(97, 87, 97);
+    color: black;
     border: 2px solid rgb(97, 87, 97);
     border-radius: 20px;
     background-color: white;
@@ -100,14 +101,14 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Hover effect for Login button */
+  
   .loginform .log-in:hover {
     color: white;
     background-color: rgb(97, 87, 97);
     transform: scale(1.05);
   }
   
-  /* Links Styling */
+ 
   a {
     text-decoration: none;
     color: black;

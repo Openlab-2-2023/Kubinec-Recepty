@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="style.css"
-      href="database.js"
-      href="server.js"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Recepty.sk</title>
-  </head>
-  <body class="body">
-    <div class="header">
-      <div class="Nazov">
-        <button class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</button>
-        <script>
-          function refreshPage() {
-            window.location.reload();
-          }
-        </script>
-        <div class="register">
-          <p>𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</p>
-          <a href="register.html"></a>
-        </div>
-        <div class="log-in">
-          
 
-          <a href="log-in.html">𝓛𝓸𝓰𝓲𝓷</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" href="database.js" href="server.js" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Recepty.sk</title>
+</head>
+
+<body class="body">
+  <div class="header">
+    <div class="Nazov">
+      <button class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</button>
+      <script>
+        function refreshPage() {
+          window.location.reload();
+        }
+      </script>
+      <div class="register">
+        
+        <a href="register.html">𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</a>
       </div>
-      <div class="search-container">
-        <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button" onclick="performSearch()">
-          <img class="search-icon" src="images/search-icon.png" />
-        </button>
-        <script>
-          function performSearch() {
-            const searchTerm = document.getElementById("searchInput").value;
-            console.log("Searching for:", searchTerm);
-          }
-        </script>
+      <div class="log-in">
+        <a href="log-in.html">𝓛𝓸𝓰𝓲𝓷</a>
       </div>
-      <a href="jedla.html" class="Recepty-button">𝓔-𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
-      <a href="kontakty.html" class="Kontakty-button">𝓚𝓸𝓷𝓽𝓪𝓴𝓽𝔂</a>
-      <a href="vlastny.html" class="Vlastny-button">𝓥𝓵𝓪𝓼𝓽𝓷𝔂 𝓻𝓮𝓬𝓮𝓹𝓽</a>
     </div>
-    <div class="telo"></div>
-  </body>
+    <div class="search-container">
+      <input class="search-bar" type="text" placeholder="Search" />
+      <button class="search-button" onclick="performSearch()">
+        <img class="search-icon" src="images/search-icon.png" />
+      </button>
+      <script>
+        function performSearch() {
+          const searchTerm = document.getElementById("searchInput").value;
+          console.log("Searching for:", searchTerm);
+        }
+      </script>
+    </div>
+    <div class="selection">
+    <a href="jedla.html" class="Recepty-button">𝓔-𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
+    <a href="kontakty.html" class="Kontakty-button">𝓚𝓸𝓷𝓽𝓪𝓴𝓽𝔂</a>
+    <a href="vlastny.html" class="Vlastny-button">𝓥𝓵𝓪𝓼𝓽𝓷𝔂 𝓻𝓮𝓬𝓮𝓹𝓽</a>
+  </div>
+  </div>
+ 
+</body>
+
 </html>

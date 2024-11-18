@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(242, 236, 242); 
+  background-color: rgb(228, 216, 228); 
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -95,18 +95,7 @@ body {
   display: inline-block; 
 }
 
-.Recepty-button {
-  margin-left: 80px;
-}
 
-.Kontakty-button {
-  margin-left: 150px;
-}
-
-.Vlastny-button {
-  margin-left: 200px;
-  width: 460px;
-}
 
 .Recepty-button:hover, .Kontakty-button:hover, .Vlastny-button:hover {
   color: black; 
@@ -128,7 +117,7 @@ body {
 }
 
 
-.register, .log-in {
+.register {
   font-size: 20px;
   padding: 8px 16px;
   margin-left: 50px;
@@ -138,9 +127,21 @@ body {
   background-color: white;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
+  margin-top: 50px;
 }
-
-.register:hover, .log-in:hover {
+.log-in {
+  font-size: 20px;
+  padding: 8px 16px;
+  margin-left: 50px;
+  color: rgb(97, 87, 97);
+  border: 1px solid rgb(97, 87, 97);
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  margin-top: 50px;
+}
+.register:hover , .log-in:hover {
   color: white;
   background-color: rgb(97, 87, 97);
 }
@@ -173,3 +174,26 @@ a:visited {
 .refresh-button:hover, .register:hover, .log-in:hover, .Recepty-button:hover, .Kontakty-button:hover, .Vlastny-button:hover {
   transform: scale(1.05);
 }
+.selection a {
+  display:inline-block;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 40px;
+}
+.selection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(146, 145, 146), rgb(97, 87, 97)); 
+  padding: 10px;
+  width: 100%; 
+  max-width: 1200px; 
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 20px; 
+
+}
+

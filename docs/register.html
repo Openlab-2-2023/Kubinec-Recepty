@@ -15,7 +15,10 @@
                   window.location.reload();
               }
           </script>
-    <script>
+        </div>
+    </div>
+   <script>
+      
       document.getElementById("registerForm").onsubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -30,17 +33,15 @@
       };
     </script>
     <div class="register">
-      <p>𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</p>
-      <form id="registerform">
-        <input type="text" name="name" placeholder="Name" required />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Register</button>
+      <h1>𝓡𝓮𝓰𝓲𝓼𝓽𝓮𝓻</h1>
+      <form class="registerform">
+        <input type="text"  placeholder="Name" required />
+        <input type="password" placeholder="Password" required/>
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="register">Register</button>
       </form>
     </div>
+        
+    
   </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(242, 236, 242);
+  background-color: rgb(228, 216, 228);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -30,10 +30,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .refresh-button {
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   background-color: transparent;
   border: 0;
@@ -43,12 +46,11 @@ body {
   transition: color 0.3s, transform 0.2s;
 }
 
-.refresh-button:hover,
-.refresh-button:visited {
+.refresh-button:hover {
   color: black;
 }
 
-/* Štýl pre sekciu kontaktov */
+
 .contact-section {
   background-color: #ffffff;
   border-radius: 8px;
@@ -57,6 +59,7 @@ body {
   max-width: 600px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  
 }
 
 .contact-section h1 {
