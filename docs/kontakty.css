@@ -15,6 +15,7 @@ body {
   padding: 0;
 }
 
+
 .Nazov {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   display: flex;
@@ -94,4 +95,56 @@ body {
 
 .contact-info a:hover {
   color: black;
+}
+footer.logos {
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+  margin-top: 30px;
+  width: 400px;
+  height: 80px;
+  border-radius: 8px
+}
+  .social-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    margin: 0 auto;
+    }
+
+.social-icons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+  height: 65px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 65px;
+}
+
+.social-icons  a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.social-icons :hover {
+  transform: scale(1.1);
+  background-color: #de0e23;
+  color: #fff;
+}
+
+.social-icons :hover i {
+  color: #de0e23;
 }
