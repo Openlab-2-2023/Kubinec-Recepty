@@ -3,18 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vlastný recept</title>
+    <title>Vlastny recept</title>
     <link rel="stylesheet" href="vlastny.css">
 </head>
-<body class="body">
-    <header>
-        <div class="Nazov">
-            <a href="index.html"class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
-            <script>
-              function refreshPage() {
-                  window.location.reload();
-              }
-          </script>
+<body>
+    <header class="Nazov">
+        <a href="index.html"class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
+        <script>
+          function refreshPage() {
+              window.location.reload();
+          }
+      </script>
     </header>
+    <main>
+        <h2>Vytvor si vlastný recept</h2>
+        <div class="form-section">
+            <label for="ingredient">Pridaj ingrendienciu:</label>
+            <input type="text" id="ingredient" placeholder="Pridaj ingrendienciu">
+            <button onclick="addIngredient()">Pridaj ingrendienciu</button>
+            <ul class="ingredients-list" id="ingredients-list"></ul>
+        </div>
+        <div class="form-section">
+            <label for="flavor">Pridaj príchuť:</label>
+            <input type="text" id="flavor" placeholder="Pridaj príchuť">
+            <button onclick="addFlavor()">Pridaj príchuť</button>
+            <ul class="flavors-list" id="flavors-list"></ul>
+        </div>
+        <div class="form-section">
+            <h3>Tvoj recept:</h3>
+            <ul id="recipe-output"></ul>
+        </div>
+    </main>
+
+    <script>
+        
+      // Functions to add ingredients
+      function addIngredient() {
+            const ingredientInput = document.getElementById('ingredient');
+            const ingredient = ingredientInput.value.trim();
+
+            if (ingredient) {
+                const list = document.getElementById('ingredients-list');
+                const li = document.createElement('li');
+                li.textContent = ingredient;
+
+                // Add a remove button
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'Remove';
+                removeBtn.onclick = function () {
+                    list.removeChild(li);
+                };
+
+                li.appendChild(removeBtn);
+                list.appendChild(li);
+
+                ingredientInput.value = ''; // Clear input
+            }
+        }
+
+        // Functions to add flavors
+        function addFlavor() {
+            const flavorInput = document.getElementById('flavor');
+            const flavor = flavorInput.value.trim();
+
+            if (flavor) {
+                const list = document.getElementById('flavors-list');
+                const li = document.createElement('li');
+                li.textContent = flavor;
+
+                // Add a remove button
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'Remove';
+                removeBtn.onclick = function () {
+                    list.removeChild(li);
+                };
+
+                li.appendChild(removeBtn);
+                list.appendChild(li);
+
+                flavorInput.value = ''; // Clear input
+            }
+        }
+
+        
+    </script>
 </body>
 </html>

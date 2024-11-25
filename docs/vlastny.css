@@ -1,53 +1,189 @@
+
 * {
   box-sizing: border-box;
- 
 }
+
 body {
-  background-color: rgb(228, 216, 228); 
+  background-color: rgb(228, 216, 228);
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-
 .Nazov {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
-  color: #fff;
-  padding: 20px;
-  width: 100%;
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 20px;
+font-family: Roboto, Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+color: #fff;
+padding: 20px;
+width: 100%;
+font-size: 50px;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+margin-bottom: 20px;
 }
 .refresh-button {
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  background-color: transparent;
-  border: 0;
-  padding: 10px;
-  text-decoration: none;
-  color: rgb(19, 18, 19);
-  transition: color 0.3s, transform 0.2s;
+cursor: pointer;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+background-color: transparent;
+border: 0;
+padding: 10px;
+text-decoration: none;
+color: rgb(19, 18, 19);
+transition: color 0.3s, transform 0.2s;
 }
 
 
 .refresh-button:hover {
-  color: black; 
+color: black; 
 }
 
 
 .refresh-button:visited {
-  color: black; 
+color: black; 
+}
+
+
+/* Main Section */
+main {
+  max-width: 800px;
+  width: 100%;
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(228, 216, 228));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Section Titles */
+h2 {
+  color: rgb(97, 87, 97);
+  font-size: 32px;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(70, 63, 70);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(70, 63, 70);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(70, 63, 70);
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 0;
+  background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: rgb(70, 63, 70);
+  transform: scale(1.05);
+}
+
+/* Lists */
+.ingredients-list, .flavors-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients-list li, .flavors-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-list li button, .flavors-list li button {
+  background: rgb(228, 216, 228);
+  color: rgb(97, 87, 97);
+  border: 1px solid rgb(97, 87, 97);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 3px 6px; /* Reduced padding */
+  font-size: 10px; /* Smaller font size */
+  width: auto; /* Allow button to shrink to content size */
+  min-width: 40px; /* Set a minimum width for the button */
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.ingredients-list li button:hover, .flavors-list li button:hover {
+  background: rgb(97, 87, 97);
+  color: white;
+}
+
+
+
+/* Recipe Output */
+#recipe-output {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+#recipe-output li {
+  padding: 10px 15px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Recipe Output */
+#recipe-output {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+#recipe-output li {
+  padding: 10px 15px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

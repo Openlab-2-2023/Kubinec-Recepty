@@ -102,49 +102,39 @@ footer.logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
   width: 400px;
   height: 80px;
-  border-radius: 8px
+  border-radius: 8px;
 }
-  .social-icons{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    width: auto; 
-    margin: 0 auto;
-    }
 
-.social-icons div {
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+}
+
+.social-icons a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
-  font-size: 15px;
+  color: white;
+  font-size: 30px;
+  background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  
   height: 65px;
-  border-radius: 50%;
-  font-size: 30px;
   width: 65px;
-}
-
-.social-icons  a {
+  border-radius: 50%;
   text-decoration: none;
-  color: inherit;
 }
 
-
-
-.social-icons :hover {
+.social-icons a:hover {
   transform: scale(1.1);
-  background-color: #de0e23;
+  
   color: #fff;
-}
-
-.social-icons :hover i {
-  color: #de0e23;
 }
