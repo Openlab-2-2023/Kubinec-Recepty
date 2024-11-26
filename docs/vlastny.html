@@ -23,12 +23,7 @@
             <button onclick="addIngredient()">Pridaj ingrendienciu</button>
             <ul class="ingredients-list" id="ingredients-list"></ul>
         </div>
-        <div class="form-section">
-            <label for="flavor">Pridaj príchuť:</label>
-            <input type="text" id="flavor" placeholder="Pridaj príchuť">
-            <button onclick="addFlavor()">Pridaj príchuť</button>
-            <ul class="flavors-list" id="flavors-list"></ul>
-        </div>
+        
         <div class="form-section">
             <h3>Tvoj recept:</h3>
             <ul id="recipe-output"></ul>
@@ -37,7 +32,7 @@
 
     <script>
         
-      // Functions to add ingredients
+     
       function addIngredient() {
             const ingredientInput = document.getElementById('ingredient');
             const ingredient = ingredientInput.value.trim();
@@ -47,7 +42,7 @@
                 const li = document.createElement('li');
                 li.textContent = ingredient;
 
-                // Add a remove button
+                
                 const removeBtn = document.createElement('button');
                 removeBtn.textContent = 'Remove';
                 removeBtn.onclick = function () {
@@ -57,11 +52,11 @@
                 li.appendChild(removeBtn);
                 list.appendChild(li);
 
-                ingredientInput.value = ''; // Clear input
+                ingredientInput.value = ''; 
             }
         }
 
-        // Functions to add flavors
+        
         function addFlavor() {
             const flavorInput = document.getElementById('flavor');
             const flavor = flavorInput.value.trim();
@@ -71,7 +66,7 @@
                 const li = document.createElement('li');
                 li.textContent = flavor;
 
-                // Add a remove button
+                
                 const removeBtn = document.createElement('button');
                 removeBtn.textContent = 'Remove';
                 removeBtn.onclick = function () {
@@ -81,7 +76,7 @@
                 li.appendChild(removeBtn);
                 list.appendChild(li);
 
-                flavorInput.value = ''; // Clear input
+                flavorInput.value = ''; 
             }
         }
 
