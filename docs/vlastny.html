@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="Nazov">
-        <a href="index.html"class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
+        <a href="index.html" class="refresh-button" onclick="refreshPage()">𝓡𝓮𝓬𝓮𝓹𝓽𝔂</a>
         <script>
           function refreshPage() {
               window.location.reload();
@@ -17,70 +17,212 @@
     </header>
     <main>
         <h2>Vytvor si vlastný recept</h2>
+        
+        <!-- Ingredient Section -->
         <div class="form-section">
-            <label for="ingredient">Pridaj ingrendienciu:</label>
-            <input type="text" id="ingredient" placeholder="Pridaj ingrendienciu">
-            <button onclick="addIngredient()">Pridaj ingrendienciu</button>
+            <label for="ingredient">Pridaj ingredienciu:</label>
+            <input type="text" id="ingredient" placeholder="Pridaj ingredienciu">
+            <button onclick="addIngredient()">Pridaj ingredienciu</button>
             <ul class="ingredients-list" id="ingredients-list"></ul>
         </div>
         
+        <!-- Recipe Name Section -->
+        <div class="form-section">
+            <label for="recept">Meno receptu:</label>
+            <input type="text" id="recept" placeholder="Pridaj Meno">
+            <button onclick="addRecipeName()">Pridaj Meno</button>
+            <ul class="recept-list" id="recept-list"></ul>
+        </div>
+        
+        <!-- Description Section -->
+        <div class="form-section">
+            <label for="description">Popis receptu:</label>
+            <input type="text" id="description" placeholder="Napíš popis receptu"></input>
+            <button onclick="addDescription()">Pridaj Popis</button>
+            <ul class="description-list" id="description-list"></ul>
+        </div>
+
+        <!-- Recipe Output Section -->
         <div class="form-section">
             <h3>Tvoj recept:</h3>
-            <ul id="recipe-output"></ul>
+            <ul class="recipe-output" id="recipe-output"></ul>
         </div>
     </main>
 
     <script>
-        
-     
-      function addIngredient() {
+        let recipeName = ''; // Store the recipe name
+        let recipeDescription = ''; // Store the recipe description
+        const ingredients = []; // Store the ingredients in an array
+
+        // Function to add ingredient
+        function addIngredient() {
             const ingredientInput = document.getElementById('ingredient');
             const ingredient = ingredientInput.value.trim();
 
             if (ingredient) {
+                ingredients.push(ingredient); // Store ingredient in the array
+                updateRecipeOutput(); // Update the recipe output when a new ingredient is added
                 const list = document.getElementById('ingredients-list');
                 const li = document.createElement('li');
                 li.textContent = ingredient;
 
-                
                 const removeBtn = document.createElement('button');
                 removeBtn.textContent = 'Remove';
                 removeBtn.onclick = function () {
-                    list.removeChild(li);
+                    removeIngredient(ingredient); // Remove the ingredient
                 };
 
+                const editBtn = document.createElement('button');
+                editBtn.textContent = 'Edit';
+                editBtn.onclick = function () {
+                    editIngredient(ingredient); // Edit the ingredient
+                };
+
+                li.appendChild(editBtn);
                 li.appendChild(removeBtn);
                 list.appendChild(li);
 
-                ingredientInput.value = ''; 
+                ingredientInput.value = ''; // Clear the input after adding
             }
         }
 
-        
-        function addFlavor() {
-            const flavorInput = document.getElementById('flavor');
-            const flavor = flavorInput.value.trim();
+        // Function to edit ingredient
+        function editIngredient(oldIngredient) {
+            const ingredientInput = document.getElementById('ingredient');
+            ingredientInput.value = oldIngredient; // Set the input field to the old ingredient
+            removeIngredient(oldIngredient); // Remove the ingredient from the list
+        }
 
-            if (flavor) {
-                const list = document.getElementById('flavors-list');
-                const li = document.createElement('li');
-                li.textContent = flavor;
-
-                
-                const removeBtn = document.createElement('button');
-                removeBtn.textContent = 'Remove';
-                removeBtn.onclick = function () {
-                    list.removeChild(li);
-                };
-
-                li.appendChild(removeBtn);
-                list.appendChild(li);
-
-                flavorInput.value = ''; 
+        // Function to remove ingredient
+        function removeIngredient(ingredient) {
+            const index = ingredients.indexOf(ingredient);
+            if (index > -1) {
+                ingredients.splice(index, 1); // Remove ingredient from the array
+                updateRecipeOutput(); // Update the recipe output after removal
             }
         }
 
-        
+        // Function to add recipe name
+        function addRecipeName() {
+            const recipeInput = document.getElementById('recept');
+            const name = recipeInput.value.trim();
+
+            if (name) {
+                recipeName = name; // Store the recipe name
+                updateRecipeOutput(); // Update the recipe output when a recipe name is added
+                recipeInput.value = ''; // Clear the input after adding
+            }
+        }
+
+        // Function to add description
+        function addDescription() {
+            const descriptionInput = document.getElementById('description');
+            const description = descriptionInput.value.trim();
+
+            if (description) {
+                recipeDescription = description; // Store the recipe description
+                updateRecipeOutput(); // Update the recipe output when description is added
+                descriptionInput.value = ''; // Clear the input after adding
+            }
+        }
+
+        // Function to update the recipe output
+        function updateRecipeOutput() {
+            const recipeOutput = document.getElementById('recipe-output');
+            recipeOutput.innerHTML = ''; // Clear current output
+
+            if (recipeName) {
+                const titleLi = document.createElement('li');
+                titleLi.textContent = `Názov receptu: ${recipeName}`;
+                recipeOutput.appendChild(titleLi);
+            }
+
+            if (recipeDescription) {
+                const descriptionLi = document.createElement('li');
+                descriptionLi.textContent = `Popis receptu: ${recipeDescription}`;
+                recipeOutput.appendChild(descriptionLi);
+            }
+
+            if (ingredients.length > 0) {
+                const ingredientsHeader = document.createElement('li');
+                ingredientsHeader.textContent = 'Ingrediencie:';
+                recipeOutput.appendChild(ingredientsHeader);
+
+                ingredients.forEach(function(ingredient) {
+                    const ingredientText = document.createElement('li');
+                    ingredientText.textContent = ingredient;
+                    recipeOutput.appendChild(ingredientText);
+                });
+            }
+        }
+
+        // Add event listeners to trigger "Enter" key
+        document.getElementById('ingredient').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                addIngredient(); // Add ingredient when Enter is pressed
+                event.preventDefault(); // Prevent form submission (if it's within a form)
+            }
+        });
+
+        document.getElementById('recept').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                addRecipeName(); // Add recipe name when Enter is pressed
+                event.preventDefault(); // Prevent form submission (if it's within a form)
+            }
+        });
+
+        document.getElementById('description').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                addDescription(); // Add description when Enter is pressed
+                event.preventDefault(); // Prevent form submission (if it's within a form)
+            }
+        });
+
+        // Add event listeners for Backspace to remove last added item
+        document.getElementById('ingredient').addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace' && document.getElementById('ingredient').value === '') {
+                removeLastItem('ingredient');
+            }
+        });
+
+        document.getElementById('recept').addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace' && document.getElementById('recept').value === '') {
+                removeLastItem('recept');
+            }
+        });
+
+        document.getElementById('description').addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace' && document.getElementById('description').value === '') {
+                removeLastItem('description');
+            }
+        });
+
+        // Function to remove the last item based on the type
+        function removeLastItem(type) {
+            if (type === 'ingredient' && ingredients.length > 0) {
+                const lastIngredient = ingredients.pop(); // Remove the last ingredient
+                removeLastIngredientElement(lastIngredient); // Remove it from the DOM
+            } else if (type === 'recept' && recipeName) {
+                recipeName = ''; // Clear the recipe name
+                updateRecipeOutput(); // Update the recipe output
+            } else if (type === 'description' && recipeDescription) {
+                recipeDescription = ''; // Clear the recipe description
+                updateRecipeOutput(); // Update the recipe output
+            }
+        }
+
+        // Function to remove last ingredient from the DOM
+        function removeLastIngredientElement(lastIngredient) {
+            const list = document.getElementById('ingredients-list');
+            const items = list.getElementsByTagName('li');
+            for (let i = items.length - 1; i >= 0; i--) {
+                if (items[i].textContent.replace('Remove', '').replace('Edit', '').trim() === lastIngredient) {
+                    list.removeChild(items[i]);
+                    break;
+                }
+            }
+            updateRecipeOutput(); // Update the recipe output after removal
+        }
     </script>
 </body>
 </html>
