@@ -83,6 +83,10 @@ body {
 
 .contact-info p {
   color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  
+  
 }
 
 .contact-info a {

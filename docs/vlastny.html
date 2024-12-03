@@ -85,6 +85,47 @@
                 ingredientInput.value = ''; // Clear the input after adding
             }
         }
+        function addIngredient() {
+    const ingredientInput = document.getElementById('ingredient');
+    const ingredient = ingredientInput.value.trim();
+
+    if (ingredient) {
+        ingredients.push(ingredient); // Add ingredient to the array
+        updateRecipeOutput(); // Update the recipe output when a new ingredient is added
+
+        const list = document.getElementById('ingredients-list');
+        const li = document.createElement('li');
+        li.textContent = ingredient;
+
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.onclick = function () {
+            // Remove from ingredients array
+            const index = ingredients.indexOf(ingredient);
+            if (index > -1) {
+                ingredients.splice(index, 1);
+            }
+
+            // Remove the list item from the DOM
+            list.removeChild(li);
+
+            // Update the recipe output
+            updateRecipeOutput();
+        };
+
+        const editBtn = document.createElement('button');
+        editBtn.textContent = 'Edit';
+        editBtn.onclick = function () {
+            editIngredient(ingredient); // Edit the ingredient
+        };
+
+        li.appendChild(editBtn);
+        li.appendChild(removeBtn);
+        list.appendChild(li);
+
+        ingredientInput.value = ''; // Clear the input after adding
+    }
+}
 
         // Function to edit ingredient
         function editIngredient(oldIngredient) {
@@ -93,14 +134,7 @@
             removeIngredient(oldIngredient); // Remove the ingredient from the list
         }
 
-        // Function to remove ingredient
-        function removeIngredient(ingredient) {
-            const index = ingredients.indexOf(ingredient);
-            if (index > -1) {
-                ingredients.splice(index, 1); // Remove ingredient from the array
-                updateRecipeOutput(); // Update the recipe output after removal
-            }
-        }
+       
 
         // Function to add recipe name
         function addRecipeName() {
