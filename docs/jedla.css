@@ -89,3 +89,6 @@ body {
   font-size: 0.9em;
   color: #555;
 }
+img{
+  border-radius: 8px;
+}
