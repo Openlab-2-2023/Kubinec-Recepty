@@ -84,6 +84,7 @@ body {
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
   margin-top: 50px;
+  text-decoration: none;
 }
 .log-in {
   font-size: 20px;
@@ -96,6 +97,7 @@ body {
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
   margin-top: 50px;
+  text-decoration: none;
 }
 .register:hover , .log-in:hover {
   color: white;
@@ -152,3 +154,19 @@ a:visited {
 
 }
 
+.b-img{
+  
+
+  position: relative;
+  z-index: -1;
+  background-image: url(https://www.asiahub.sk/wp-content/uploads/2021/06/jedla-azia-asiahub-780x470.jpg);
+  
+  width: 780px;
+  height: 470px;
+  border-radius: 40px;
+  
+  
+}
+.back-img{
+  border-radius: 100px;
+}
