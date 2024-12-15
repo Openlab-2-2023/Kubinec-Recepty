@@ -1,4 +1,4 @@
-
+/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,167 +6,166 @@
 }
 
 body {
-  background-color: rgb(228, 216, 228); 
-  width: 100vw;
-  height: 100vh;
+  background-color: #add8e6; /* Light blue background */
+  color: white;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  text-align: center;
 }
 
-
-.Nazov {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  width: 100%;
-  max-width: 1200px; 
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0; 
-  
-}
-
-
-
-
-
-.Recepty-button, .Kontakty-button, .Vlastny-button {
-  font-size: 30px;
-  color: rgb(19, 18, 19);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s, color 0.3s;
-  text-decoration: none;
-  margin-top: 40px;
-  display: inline-block; 
-}
-
-
-
-.Recepty-button:hover, .Kontakty-button:hover, .Vlastny-button:hover {
-  color: black; 
-}
-
-
-.refresh-button {
-  font-size: 50px;
-  color: rgb(19, 18, 19);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-top: 40px;
-  transition: color 0.3s;
-}
-
-.refresh-button:hover {
-  color: black;
-}
-
-
-.register {
-  font-size: 20px;
-  padding: 8px 16px;
-  margin-left: 50px;
-  color: rgb(97, 87, 97);
-  border: 1px solid rgb(97, 87, 97);
-  border-radius: 15px;
-  background-color: white;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-  margin-top: 50px;
-  text-decoration: none;
-}
-.log-in {
-  font-size: 20px;
-  padding: 8px 16px;
-  margin-left: 50px;
-  color: rgb(97, 87, 97);
-  border: 1px solid rgb(97, 87, 97);
-  border-radius: 15px;
-  background-color: white;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-  margin-top: 50px;
-  text-decoration: none;
-}
-.register:hover , .log-in:hover {
+/* Global Button Styling */
+button, .user-actions a, .nav-links a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent; /* Keeps border consistent with background */
   color: white;
-  background-color: rgb(97, 87, 97);
-}
-
-
-.registerform, .loginform {
-  border-radius: 15px;
-  border: 1px solid rgb(97, 87, 97);
-}
-
-.loginform {
-  background-color: cornflowerblue;
-}
-
-
-a {
+  background-color: #0f3460; /* Same background for buttons */
   text-decoration: none;
-  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-a:hover {
-  color: black;
+button:hover, .user-actions a:hover, .nav-links a:hover {
+  background-color: white;
+  color: #0f3460;
+  border-color: #0f3460; /* Border changes color on hover */
+  transform: scale(1.05); /* Slight scale effect */
 }
 
-a:visited {
-  color: black;
+/* Optional: Add focus outline for accessibility */
+button:focus, .user-actions a:focus, .nav-links a:focus {
+  outline: 2px solid #16213e;
 }
 
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, #16213e, #1a1a2e);
+  padding: 40px 20px;
+  border-radius: 10px;
+  
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0; /* Removed margin-bottom to remove space */
+}
 
-.refresh-button:hover, .register:hover, .log-in:hover, .Recepty-button:hover, .Kontakty-button:hover, .Vlastny-button:hover {
+.site-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0; /* Removed margin */
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.site-title:hover {
+  color: #0f3460;
+  border-radius: 3px;
+}
+
+.user-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 0; /* Removed margin to eliminate spacing */
+}
+
+.user-actions a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #0f3460;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.user-actions a:hover {
+  background-color: white;
+  color: #0f3460;
+  border-color: #0f3460;
   transform: scale(1.05);
 }
-.selection a {
-  display:inline-block;
-  justify-content: space-between;
-  text-align: center;
-  margin-left: 75px;
-  margin-right: 75px;
+
+/* Navigation Styling */
+.main-navigation {
+  background: linear-gradient(135deg, #16213e, #1a1a2e);
+  padding: 20px 10px;
+  border-radius: 10px;
   margin-bottom: 40px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-.selection{
+
+.nav-links {
+  list-style: none;
   display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-links a {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #0f3460;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #0f3460;
+  border-color: #0f3460;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(146, 145, 146), rgb(97, 87, 97)); 
-  padding: 10px;
-  width: 100%; 
-  max-width: 1200px; 
- 
-  border-bottom-left-radius: 20px; 
-  border-bottom-right-radius: 20px; 
-
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
 }
 
-.b-img{
-  
-
-  position: relative;
-  z-index: -1;
-  background-image: url(https://www.asiahub.sk/wp-content/uploads/2021/06/jedla-azia-asiahub-780x470.jpg);
-  
-  width: 780px;
-  height: 470px;
-  border-radius: 40px;
-  
-  
+.image-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
-.back-img{
-  border-radius: 100px;
+
+.back-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Additional Adjustments */
+.user-actions,
+.nav-links {
+  justify-content: center;
+}
+
+.nav-links a,
+.user-actions a {
+  max-width: 200px;
+  text-align: center;
 }
