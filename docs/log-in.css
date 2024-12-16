@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: rgb(228, 216, 228); 
+    background-color: rgb(72, 72, 224); 
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
     color: #fff;
     padding: 20px;
     width: 100%;
@@ -43,7 +43,7 @@
   
   .refresh-button {
     font-size: 80px;
-    color: rgb(19, 18, 19);
+    color: rgb(255, 255, 255);
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -52,20 +52,20 @@
   }
   
   .refresh-button:hover {
-    color: black;
-    transform: scale(1.1);
+    color: white;
+    transform: scale(1.05);
   }
   
   
   .loginform {
-    background-color: rgb(97, 87, 97);
-    border-radius: 20px;
-    border: 2px solid rgb(97, 87, 97);
+    background-color: #0f3460;
+    border: 2px solid #0f3460;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     width: 320px;
     margin-top: 30px;
-    background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+    border-radius: 20px;
+    background: #0f3460;
   }
   
   
@@ -119,6 +119,6 @@
   }
   
   a:visited {
-    color: black;
+    color: white;
   }
   

@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(228, 216, 228);
+  background-color: rgb(72, 72, 224);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -19,7 +19,7 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+background: linear-gradient(135deg, #16213e, #1a1a2e);
 color: #fff;
 padding: 20px;
 margin-top: 20px;
@@ -39,18 +39,19 @@ background-color: transparent;
 border: 0;
 padding: 10px;
 text-decoration: none;
-color: rgb(19, 18, 19);
+color: rgb(255, 255, 255);
 transition: color 0.3s, transform 0.2s;
 }
 
 
 .refresh-button:hover {
-color: black; 
+color: rgb(255, 255, 255); 
+transform:scale(1.05);
 }
 
 
 .refresh-button:visited {
-color: black; 
+color: rgb(255, 255, 255); 
 }
 
 
@@ -58,7 +59,7 @@ color: black;
 main {
   max-width: 800px;
   width: 100%;
-  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(228, 216, 228));
+  background: #7f89e6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -69,13 +70,13 @@ main {
 
 
 h2 {
-  color: rgb(97, 87, 97);
+  color: rgb(0, 0, 0);
   font-size: 32px;
   text-align: center;
 }
 
 h3 {
-  color: rgb(70, 63, 70);
+  color: rgb(0, 0, 0);
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -90,7 +91,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
-  color: rgb(70, 63, 70);
+  color: rgb(0, 0, 0);
 }
 
 input[type="text"] {
@@ -98,7 +99,7 @@ input[type="text"] {
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 8px;
-  border: 1px solid rgb(70, 63, 70);
+  border: 1px solid rgb(0, 0, 0);
   font-size: 16px;
 }
 
@@ -107,7 +108,7 @@ button {
   padding: 12px;
   border-radius: 8px;
   border: 0;
-  background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+  background: #0f3460;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -116,7 +117,7 @@ button {
 }
 
 button:hover {
-  background: rgb(70, 63, 70);
+  background: #0f3460;
   transform: scale(1.02);
 }
 

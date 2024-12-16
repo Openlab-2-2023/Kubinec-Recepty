@@ -44,38 +44,34 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
 
 /* Header Styling */
 .header {
-  background: linear-gradient(135deg, #16213e, #1a1a2e);
-  padding: 40px 20px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #16213e, #1a1a2e); /* Background gradient */
+  padding: 20px; /* Space around the header content */
+  display: flex; /* Enables horizontal layout */
+  justify-content: space-between; /* Positions items at opposite ends */
+  align-items: center; /* Centers items vertically */
+  width: 100%; /* Makes the header span the full width */
+  border-radius: 0; /* Removes border-radius for a flat design */
   
-  width: 1200px;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0; /* Removed margin-bottom to remove space */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for emphasis */
+  height: 150px;
+
 }
 
 .site-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  margin-bottom: 0; /* Removed margin */
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.site-title:hover {
-  color: #0f3460;
-  border-radius: 3px;
+  font-size: 3rem; /* Adjusts title size */
+  font-weight: 700; /* Bold font */
+  color: white; /* White text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Optional text shadow */
+  margin: 0; /* Removes default margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Makes the title span the available space */
+  text-align: left; /* Aligns the title to the left */
+  padding-left:20px ;
 }
 
 .user-actions {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 0; /* Removed margin to eliminate spacing */
+  display: flex; /* Enables horizontal layout */
+  gap: 20px; /* Space between buttons */
 }
 
 .user-actions a {
@@ -96,14 +92,17 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   transform: scale(1.05);
 }
 
+
 /* Navigation Styling */
 .main-navigation {
   background: linear-gradient(135deg, #16213e, #1a1a2e);
   padding: 20px 10px;
-  border-radius: 10px;
+  
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin-bottom: 40px;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+ 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -113,6 +112,7 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   justify-content: space-around;
   gap: 20px;
   justify-content: center;
+  
 }
 
 .nav-links a {
@@ -132,31 +132,8 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   transform: scale(1.05);
 }
 
-/* Main Content */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 90%;
-  max-width: 1200px;
-}
 
-.image-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 20px auto;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
 
-.back-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* Additional Adjustments */
 .user-actions,
@@ -168,4 +145,146 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
 .user-actions a {
   max-width: 200px;
   text-align: center;
+
+}
+.nav-panel {
+  display: flex; /* Flexbox layout for horizontal arrangement */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center vertically */
+  margin: 20px 0; /* Space above and below the panel */
+  padding: 20px; /* Internal padding for spacing */
+  background: linear-gradient(135deg, #0f3460, #16213e); /* Background matching the theme */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Stretch across the width of the header */
+  max-width: 100%; /* Limit the maximum size */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  height:300px;
+}
+
+.nav-panel div {
+  flex: 1; /* Each section takes equal space */
+  margin: 0 10px; /* Space between sections */
+  text-align: center; /* Center align content */
+}
+
+.nav-panel div img {
+  width: 100px; /* Adjust image size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nav-panel div h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.nav-panel div p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+  .nav-panel {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .nav-panel div {
+    margin: 20px 0; /* Add spacing between stacked sections */
+  }
+}
+
+.kon {
+  background-color: #16213e; /* Dark background color */
+  padding: 20px; /* Space around the content */
+  display: flex; /* Enables horizontal layout */
+  justify-content: space-between; /* Space between each paragraph */
+  align-items: center; /* Align items vertically in the center */
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  color: white;
+  text-align: center;
+  width: 100%; /* Ensures it spans the full width */
+  margin-top: 90px;
+  height: 140px;
+}
+
+.kon h4 {
+  margin-bottom: 5px; /* Small margin below the headings */
+  font-weight: 600;
+}
+
+.kon p, .kon h4 {
+  margin: 0; /* Removes extra margins */
+}
+
+/* General layout for contact info */
+.contact-info {
+  display: flex; /* Enables horizontal layout */
+  align-items: center; /* Vertically align items to the center */
+  justify-content: space-between; /* Space between email, phone, and social icons */
+  gap: 20px;
+  padding: 10px 20px; /* Space around the contact section */
+}
+
+/* Individual contact information styling */
+.contact-info div {
+  text-align: left; /* Aligns text to the left */
+  flex: 1; /* Makes each section take equal space */
+}
+
+.contact-info h4 {
+  font-weight: 600; /* Bold font for headings */
+  margin-bottom: 5px; /* Small space below the headings */
+}
+
+.contact-info p {
+  margin: 0; /* Removes extra space below the paragraph */
+}
+
+/* Styling for the social icons container */
+.social-icons {
+  display: flex; /* Align icons in a row */
+  gap: 20px; /* Space between each icon */
+  align-items: center; /* Vertically align icons */
+}
+
+/* Individual social icon styling */
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Icon color */
+  font-size: 30px; /* Icon size */
+  background: #0f3460; /* Gradient background */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border around the icon */
+  transition: transform 0.3s ease, color 0.3s ease; /* Hover effect */
+  height: 65px; /* Icon height */
+  width: 65px; /* Icon width */
+  border-radius: 50%; /* Round icons */
+  text-decoration: none; /* Removes underline */
+  gap: 20px;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  color: #fff; /* Keeps icon color white on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center align text */
+  }
+
+  .contact-info div {
+    margin-bottom: 20px; /* Adds space between each contact section */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center social icons */
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
 }
