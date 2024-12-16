@@ -104,6 +104,7 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   width: 100%;
  
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
 }
 
 .nav-links {
@@ -123,6 +124,7 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   border-radius: 5px;
   text-decoration: none;
   transition: all 0.3s ease;
+ 
 }
 
 .nav-links a:hover {
@@ -159,6 +161,8 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   max-width: 100%; /* Limit the maximum size */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
   height:300px;
+  
+  
 }
 
 .nav-panel div {
@@ -207,6 +211,8 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   width: 100%; /* Ensures it spans the full width */
   margin-top: 90px;
   height: 140px;
+  position: absolute;
+  bottom: 0;
 }
 
 .kon h4 {
@@ -287,4 +293,57 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
     justify-content: center; /* Center social icons */
     gap: 10px; /* Reduced gap for smaller screens */
   }
+}
+.vlastny{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vlastny a{
+  text-decoration: none;
+}
+
+.vlastny:hover p {
+  transform:scale(1.05) ;
+  transition: 0.8s;
+}
+.vlastny:hover h3 { 
+  transform:scale(1.05) ;
+  transition:0.8s;
+}
+.vlastny:not(:hover) h3{
+  transform: scale(1);
+  transition: 0.8s;
+}
+.vlastny:not(:hover) p {
+  transform:scale(1) ;
+  transition: 0.8s;
+}
+
+.e-r{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.e-r a{
+  text-decoration: none;
+}
+
+.e-r:hover p {
+  transform:scale(1.05) ;
+  transition: 0.8s;
+}
+.e-r:hover h3 { 
+  transform:scale(1.05) ;
+  transition:0.8s;
+}
+.e-r:not(:hover) h3{
+  transform: scale(1);
+  transition: 0.8s;
+}
+.e-r:not(:hover) p {
+  transform:scale(1) ;
+  transition: 0.8s;
 }

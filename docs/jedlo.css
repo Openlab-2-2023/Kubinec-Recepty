@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color: rgb(228, 216, 228);
+    background-color: rgb(72, 72, 224); 
     margin: 0;
     padding: 20px;
     display: flex;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, rgb(97, 87, 97), rgb(70, 63, 70));
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
     color: #fff;
     padding: 20px;
     width: 100%;
@@ -41,11 +41,14 @@
     border: 0;
     padding: 10px;
     text-decoration: none;
-    color: rgb(19, 18, 19);
+    color: rgb(255, 255, 255);
     transition: color 0.3s, transform 0.2s;
     
   }
-
+.refresh-button:hover{
+  transform: scale(1.05);
+  transition:0.8s ;
+}
   .obrazok{ 
    width: 650px;
    height: 400px; 
@@ -62,11 +65,12 @@
  }
    
    .recept{
-    background-color:white;
+    background-color:#7f89e6;
     border-radius: 8px;
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
     padding: 10px;
+    font-weight: 700;
 }
 .Nazov-receptu{
     display: flex;
