@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(72, 72, 224); 
+  background-color: rgb(255, 255, 255); 
   margin: 0;
   padding: 20px;
   display: flex;
@@ -63,7 +63,7 @@ body {
 }
 
 .recipe-card {
-  background-color: #7f89e6;
+  background-color: #0f3460;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -88,10 +88,11 @@ body {
 .recipe-title {
   font-size: 1.2em;
   margin: 10px 0;
+  color: white;
 }
 .recipe-description {
   font-size: 0.9em;
-  color: #000000;
+  color: rgb(255, 255, 255);
 }
 img{
   border-radius: 8px;

@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color: rgb(72, 72, 224); 
+    background-color: rgb(255, 255, 255); 
     margin: 0;
     padding: 20px;
     display: flex;
@@ -65,7 +65,7 @@
  }
    
    .recept{
-    background-color:#7f89e6;
+    background-color:#0f3460;
     border-radius: 8px;
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
@@ -80,4 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.recept h3 , h2 , li {
+  color: #fff;
 }
