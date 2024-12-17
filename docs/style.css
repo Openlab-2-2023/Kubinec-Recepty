@@ -229,7 +229,7 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   display: flex; /* Enables horizontal layout */
   align-items: center; /* Vertically align items to the center */
   justify-content: space-between; /* Space between email, phone, and social icons */
-  gap: 20px;
+  gap: 7px;
   padding: 10px 20px; /* Space around the contact section */
 }
 
@@ -253,6 +253,8 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   display: flex; /* Align icons in a row */
   gap: 20px; /* Space between each icon */
   align-items: center; /* Vertically align icons */
+  
+
 }
 
 /* Individual social icon styling */
@@ -291,7 +293,7 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
 
   .social-icons {
     justify-content: center; /* Center social icons */
-    gap: 10px; /* Reduced gap for smaller screens */
+    gap: 20px; /* Reduced gap for smaller screens */
   }
 }
 .vlastny{
