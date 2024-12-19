@@ -349,3 +349,8 @@ button:focus, .user-actions a:focus, .nav-links a:focus {
   transform:scale(1) ;
   transition: 0.8s;
 }
+.logo{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
