@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: rgb(72, 72, 224);
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #16213e, #1a1a2e);
+    background: #0f3460;
     color: #fff;
     padding: 20px;
     width: 100%;
@@ -40,7 +40,7 @@
   
   .refresh-button {
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    color:  white;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -49,7 +49,7 @@
   }
   
   .refresh-button:hover {
-    color: rgb(255, 255, 255);
+    
     transform: scale(1.1);
   }
   
@@ -92,7 +92,7 @@
     padding: 10px 20px;
     margin-top: 10px;
     color: black;
-    border: 2px solid rgb(97, 87, 97);
+    border: 2px solid linear-gradient(135deg, #16213e, #1a1a2e); ;
     border-radius: 20px;
     background-color: white;
     cursor: pointer;
@@ -103,21 +103,16 @@
   
   .registerform .register:hover {
     color: white;
-    background-color: rgb(97, 87, 97);
+    background-color: #0f3460;
     transform: scale(1.05);
   }
   
  
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   
-  a:hover {
-    color: rgb(97, 87, 97);
+  h1{
+    color: white;
   }
-  
-  a:visited {
-    color: rgb(255, 255, 255);
-  }
-  
