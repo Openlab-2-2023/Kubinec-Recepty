@@ -116,3 +116,85 @@
   h1{
     color: white;
   }
+  /* For tablets and medium-sized devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Nazov {
+      font-size: 30px;
+      padding: 15px;
+  }
+
+  .refresh-button {
+      font-size: 60px;
+  }
+
+  .registerform {
+      width: 280px;
+      padding: 20px;
+  }
+
+  .registerform input[type="text"],
+  .registerform input[type="password"],
+  .registerform input[type="email"] {
+      font-size: 14px;
+  }
+
+  .registerform .register {
+      font-size: 16px;
+  }
+}
+
+/* For small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .Nazov {
+      font-size: 24px;
+      padding: 10px;
+  }
+
+  .refresh-button {
+      font-size: 50px;
+  }
+
+  .registerform {
+      width: 250px;
+      padding: 15px;
+  }
+
+  .registerform input[type="text"],
+  .registerform input[type="password"],
+  .registerform input[type="email"] {
+      font-size: 14px;
+  }
+
+  .registerform .register {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+/* For very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .Nazov {
+      font-size: 20px;
+      padding: 8px;
+  }
+
+  .refresh-button {
+      font-size: 40px;
+  }
+
+  .registerform {
+      width: 220px;
+      padding: 12px;
+  }
+
+  .registerform input[type="text"],
+  .registerform input[type="password"],
+  .registerform input[type="email"] {
+      font-size: 12px;
+  }
+
+  .registerform .register {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

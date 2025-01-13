@@ -117,3 +117,82 @@
   h1{
     color: white;
   }
+  /* For tablets and medium-sized devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Nazov {
+      font-size: 30px;
+      padding: 15px;
+  }
+
+  .refresh-button {
+      font-size: 60px;
+  }
+
+  .loginform {
+      width: 280px;
+      padding: 20px;
+  }
+
+  .loginform input[type="text"],
+  .loginform input[type="password"] {
+      font-size: 14px;
+  }
+
+  .loginform .log-in {
+      font-size: 16px;
+  }
+}
+
+/* For small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .Nazov {
+      font-size: 24px;
+      padding: 10px;
+  }
+
+  .refresh-button {
+      font-size: 50px;
+  }
+
+  .loginform {
+      width: 250px;
+      padding: 15px;
+  }
+
+  .loginform input[type="text"],
+  .loginform input[type="password"] {
+      font-size: 14px;
+  }
+
+  .loginform .log-in {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+/* For very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .Nazov {
+      font-size: 20px;
+      padding: 8px;
+  }
+
+  .refresh-button {
+      font-size: 40px;
+  }
+
+  .loginform {
+      width: 220px;
+      padding: 12px;
+  }
+
+  .loginform input[type="text"],
+  .loginform input[type="password"] {
+      font-size: 12px;
+  }
+
+  .loginform .log-in {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

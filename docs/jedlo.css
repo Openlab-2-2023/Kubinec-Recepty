@@ -11,13 +11,10 @@
     font-family: Arial, sans-serif;
   }
   
-  
   .Nazov {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f3460;
+    
+    background:#0f3460 ;
     color: #fff;
     padding: 20px;
     width: 100%;
@@ -27,6 +24,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
+    height: 100px;
   }
   
   
@@ -85,4 +83,174 @@
 }
 .recept h3 , h2 , li {
   color: #fff;
+}
+
+
+.Down-butt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a {
+width: 150px;
+height: 75px;
+color: #0f3460;
+}
+.download {
+  background-color: #007BFF; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+
+.download:hover {
+  background-color: #ffffff; 
+  transform: scale(1.05); 
+  color: #007BFF;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and medium-sized devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Nazov {
+      font-size: 40px; /* Slightly larger for readability */
+      padding: 15px;
+  }
+
+  .obrazok {
+      width: 100%;
+      max-width: 500px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+  }
+
+  .recept {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .recept-content {
+      font-size: 16px; /* Maintain readability */
+      line-height: 1.5; /* Improve text spacing */
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .download {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
+
+/* For smaller devices like iPhones (max-width: 480px) */
+@media (max-width: 480px) {
+  .Nazov {
+      font-size: 30px; /* Larger font for smaller screens */
+      padding: 10px;
+  }
+
+  .obrazok {
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+  }
+
+  .recept {
+      padding: 10px;
+  }
+
+  .recept-content {
+      font-size: 14px; /* Slightly smaller, but readable */
+      line-height: 1.5; /* Maintain spacing for readability */
+      text-align: center;
+      margin: 8px 0;
+  }
+
+  .download {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+}
+
+/* For extra small devices (max-width: 450px) */
+@media (max-width: 450px) {
+  .Nazov {
+      font-size: 25px; /* Adjusted for readability */
+      padding: 8px;
+  }
+
+  .obrazok {
+      width: 100%;
+      max-width: 350px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+  }
+
+  .recept {
+      padding: 8px;
+  }
+
+  .recept-content {
+      font-size: 13px; /* Still readable on smaller devices */
+      line-height: 1.4;
+      text-align: center;
+      margin: 6px 0;
+  }
+
+  .download {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+}
+
+/* For ultra-small devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .Nazov {
+      font-size: 20px; /* Smallest size while keeping it legible */
+      padding: 6px;
+  }
+
+  .obrazok {
+      width: 100%;
+      max-width: 280px;
+  }
+
+  .img {
+      width: 100%;
+      height: auto;
+  }
+
+  .recept {
+      padding: 5px;
+  }
+
+  .recept-content {
+      font-size: 12px; /* Minimal, but readable */
+      line-height: 1.4;
+      text-align: center;
+      margin: 4px 0;
+  }
+
+  .download {
+      font-size: 10px;
+      padding: 4px 6px;
+  }
 }

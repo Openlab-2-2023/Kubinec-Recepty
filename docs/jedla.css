@@ -104,3 +104,107 @@ a {
   color: white;
 }
 
+/* For small devices like iPhones (up to 767px) */
+@media screen and (max-width: 767px) {
+  .Nazov {
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  .recipe-card {
+    height: 200px;
+  }
+
+  .recipe-image {
+    width: 100%;
+    height: 120px;
+  }
+
+  .recipe-title {
+    font-size: 1.1em;
+  }
+
+  .recipe-description {
+    font-size: 0.85em;
+  }
+
+  .refresh-button {
+    font-size: 24px;
+    padding: 8px;
+  }
+}
+
+/* For very small devices (phones in portrait mode under 480px) */
+@media screen and (max-width: 480px) {
+  .Nazov {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .recipe-card {
+    height: 180px;
+  }
+
+  .recipe-image {
+    width: 100%; /* Ensure the image scales to fit the container */
+    height: 100px; /* Adjust height for better fit */
+  }
+
+  .recipe-title {
+    font-size: 1em;
+  }
+
+  .recipe-description {
+    font-size: 0.8em;
+  }
+
+  .refresh-button {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
+
+/* For extra small devices (phones in portrait mode up to 450px) */
+@media screen and (max-width: 450px) {
+  .Nazov {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .recipe-card {
+    height: 160px; /* Reduce card height for better fit */
+  }
+
+  .recipe-image {
+    width: 100%;  /* Ensure image takes up full width of card */
+    height: 80px;  /* Make image shorter for smaller devices */
+  }
+
+  .recipe-title {
+    font-size: 0.9em;
+  }
+
+  .recipe-description {
+    font-size: 0.75em;
+  }
+
+  .refresh-button {
+    font-size: 18px;
+    padding: 5px;
+  }
+}

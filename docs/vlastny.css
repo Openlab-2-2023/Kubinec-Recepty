@@ -6,7 +6,7 @@
 body {
   background: linear-gradient(135deg, #16213e, #1a1a2e); 
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +101,7 @@ input[type="text"] {
 }
 
 button {
-  width: 100%;
+  width: 70%;
   padding: 12px;
   border-radius: 8px;
   border: 0;
@@ -110,12 +110,16 @@ button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
 }
 
 button:hover {
-  background: #0f3460;
+  background: #ffffff;
   transform: scale(1.02);
+  color: #0f3460;
 }
 
 
@@ -139,7 +143,7 @@ button:hover {
 .ingredients-list li button, .flavors-list li button ,.description-list li button {
   
   
-  border: 1px solid rgb(97, 87, 97);
+  border: 1px solid #0f3460;
   border-radius: 8px;
   cursor: pointer;
   padding: 3px 6px; 
@@ -151,7 +155,7 @@ button:hover {
 }
 
 .ingredients-list li button:hover, .flavors-list li button:hover ,.description-list li button:hover {
-  background: rgb(97, 87, 97);
+  background: #0f3460;
   
 }
 
@@ -185,3 +189,37 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.ingredients-list li button, 
+.flavors-list li button, 
+.description-list li button {
+  border: 1px solid ;
+  border-radius: 4px; /* Reduced radius for a more compact look */
+  cursor: pointer;
+  padding: 5px 8px; /* Smaller padding for compact size */
+  font-size: 12px; /* Smaller font size */
+  text-align: center;
+  margin-left: 5px; /* Add spacing between buttons */
+}
+
+.ingredients-list li button:hover, 
+.flavors-list li button:hover, 
+.description-list li button:hover {
+  background: #0f3460;
+  color: white; /* Ensure visibility on hover */
+}
+
+.ingredients-list li, 
+.flavors-list li, 
+.description-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the label and buttons */
+}
+
+.ingredients-list li div, 
+.flavors-list li div, 
+.description-list li div {
+  display: flex;
+  gap: 5px; /* Add gap between buttons */
+}
+
